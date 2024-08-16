@@ -4,11 +4,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
     padding: .9rem 5rem;
     border-bottom: 1px solid #00000041;
     background-color: #fff;
+    z-index: 1;
 }
 
 nav ul {
@@ -61,14 +63,16 @@ li.brand-link {
     color: #fff;
     border: none;
     padding: 7px 23px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 8px;
+    border: 1px solid;
+    cursor: pointer;
+    font-weight: normal;
 }
 
 .nav-btn:hover {
     color: #000;
     background-color: transparent;
-    border: 1px solid;
 }
 
 
@@ -78,6 +82,7 @@ li.brand-link {
     top: 0;
     right: -100%;
     transition: all .1s;
+    z-index: 99;
 }
 
 #sidebar-active,
@@ -111,7 +116,7 @@ li.brand-link {
 
 .hero-bottom-mobile {
     height: 420px;
-    
+
 }
 
 .hero-bottom-mobile img {
@@ -124,27 +129,37 @@ li.brand-link {
     display: none;
 }
 
-.section-1 {
+.section-1,
+.section-6,
+.section-7 {
     background-color: #000;
 }
 
-.section-1-text {
+.section-1-text,
+.section-6-text,
+.section-7-text {
     margin: 150px 0 30px;
     border-left: .1px solid #ffffff6c;
 }
 
-.section-1 h4 {
+.section-1 h4,
+.section-6 h4,
+.section-7 h4 {
     padding-left: 25px;
     font-weight: 400;
     color: #fff;
 }
 
-.section-1-content {
+.section-1-content,
+.section-6-content,
+.section-7-content {
     padding: 60px 30px 30px;
     border-bottom: 1px solid #ffffff3f;
 }
 
-.section-1-text h1 {
+.section-1-text h1,
+.section-6-text h1,
+.section-7-text h1 {
     color: #fff;
     border-left: 2px solid #fff;
     padding-left: 23px;
@@ -153,7 +168,8 @@ li.brand-link {
     line-height: 1.7;
 }
 
-.section-1 p {
+.section-1 p,
+.section-6 p {
     line-height: 1.7;
     margin-top: 15px;
     padding-left: 25px;
@@ -259,12 +275,14 @@ li.brand-link {
 
 .section-2-img img,
 .section-3-img img,
-.section-4-img img {
+.section-4-img img,
+.section-5-img img,
+.section-7-img img {
     width: 100%;
 }
 
 .parallax__section {
-    background-image: url(./Images/parallax-bg-mobile.webp);
+    background: url(./Images/parallax-bg-mobile.webp);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -272,6 +290,7 @@ li.brand-link {
     display: flex;
     align-items: center;
     padding: 60px 20px;
+    backdrop-filter: blur(1px);
 }
 
 .parallax__section-content {
@@ -306,43 +325,112 @@ li.brand-link {
     color: #fff;
 }
 
-.parallax__section-text .btn {
+.parallax__section-text .btn,
+.section-7-text .btn {
     margin-left: 25px;
     border: 1px solid #fff !important;
 }
 
-.parallax__section-text .btn:hover {
+.parallax__section-text .btn:hover,
+.section-7-text .btn:hover {
     background-color: #fff;
     border: 1px solid #000 !important;
 }
 
-.parallax__section-text .btn:hover>a {
+.parallax__section-text .btn:hover>a,
+.section-7-text .btn:hover>a {
     color: #000;
 }
 
-.parallax__section-text .btn a {
+.parallax__section-text .btn a,
+.section-7-text .btn a {
     color: #fff;
 }
 
-.parallax__section-text .btn-arrow {
+.parallax__section-text .btn-arrow,
+.section-7-text .btn-arrow {
     border-left: 1px solid #fff;
 }
 
-.parallax__section-text .btn:hover>.btn-arrow {
+.parallax__section-text .btn:hover>.btn-arrow,
+.section-7-text .btn:hover>.btn-arrow {
     border-left: 1px solid #000;
 }
 
-.parallax__section-text .btn i {
+.parallax__section-text .btn i,
+.section-7-text .btn i {
     color: #fff !important;
 }
 
-.parallax__section-text .btn:hover>.btn-arrow i {
+.parallax__section-text .btn:hover>.btn-arrow i,
+.section-7-text .btn:hover>.btn-arrow i {
     color: #000 !important;
 }
 
+.section-5-content {
+    padding: 60px 30px;
+}
 
+.section-5-content-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 50px;
+}
 
+.section-5-content h2 {
+    grid-column: span 2;
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 1.7rem;
+}
 
+.section-5-content-grid h1 {
+    border-bottom: 1px solid #000000ad;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    font-weight: 400;
+}
+
+.section-5-content-grid span {
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.section-5-content-grid div {
+    grid-area: span 1 / span 1;
+}
+
+.section-6-text,
+.section-7-text {
+    margin-top: 0;
+}
+
+.section-6-icons {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    place-content: center;
+    padding: 2rem 0 3rem;
+    max-width: 550px;
+    margin-inline: auto;
+    border-bottom: 1px solid #6e6d6d75;
+}
+
+.section-6-icons div {
+    grid-area: span 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section-6-icons :not(div:first-child) img {
+    margin-bottom: 30px;
+}
+
+.section-6-icons div h4 {
+    padding: 0;
+    font-size: 13px;
+}
 
 
 
@@ -398,31 +486,46 @@ li.brand-link {
         height: 100%;
     }
 
-    .section-1 {
+    .section-1,
+    .section-6,
+    .section-7 {
         padding: 0;
         border-top: .1px solid #ffffff6c;
     }
 
-    .section-1-text {
+    .section-1-text,
+    .section-6-text,
+    .section-7-text {
         margin: 0;
     }
 
-    .section-1-content {
+    .section-1-content,
+    .section-6-content {
         border-right: .1px solid #ffffff6c;
         padding: 7rem;
     }
 
+    .section-7-content {
+        padding: 7rem;
+    }
+
     .section-1 h4,
-    .parallax__section-content h4 {
+    .section-6 h4,
+    .parallax__section-content h4,
+    .section-7-content h4 {
         padding-left: 55px;
     }
 
-    .section-1-text {
+    .section-1-text,
+    .section-6-text,
+    .section-7-text {
         margin-inline: auto;
     }
 
     .section-1-text h1,
-    .parallax__section-content h1 {
+    .section-6-text h1,
+    .parallax__section-content h1,
+    .section-7-content h1 {
         color: #fff;
         border-left: 2px solid #fff;
         padding-left: 53px;
@@ -432,6 +535,7 @@ li.brand-link {
     }
 
     .section-1 p,
+    .section-6 p,
     .parallax__section-content p {
         font-size: 1.1rem;
         line-height: 1.7;
@@ -440,7 +544,8 @@ li.brand-link {
         color: #fff;
     }
 
-    .parallax__section-content .btn {
+    .parallax__section-content .btn,
+    .section-7-content .btn {
         margin-left: 55px;
     }
 
@@ -487,9 +592,11 @@ li.brand-link {
     }
 
     .parallax__section {
-        background: url(./Images/parallax-bg-desktop.webp);
+        background-image: url(./Images/parallax-bg-desktop.webp);
+        background-position: center;
         background-size: cover;
-        background-attachment: fixed;
+        background-color: #0000002f;
+        backdrop-filter: blur(4px);
     }
 
     .parallax__section-content {
@@ -497,6 +604,53 @@ li.brand-link {
         padding: 3.5rem 2rem;
         margin: 3rem;
         margin-inline: auto;
+    }
+
+    .section-5 {
+        padding: 4rem 0;
+    }
+
+    .section-5-img {
+        width: 650px;
+        margin-right: auto;
+    }
+
+    .section-5-content-grid {
+        gap: 6rem 5rem;
+        width: 400px;
+    }
+
+    .section-5-content {
+        width: fit-content;
+        margin-inline: auto;
+        padding: 4rem 2rem;
+    }
+
+    .section-5-content h2 {
+        grid-column: span 2;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .section-5-content-grid h1 {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+
+    .section-5-content-grid span {
+        padding-bottom: 18px;
+    }
+
+    .section-6-icons {
+        gap: 7rem;
+        border-bottom: none;
+    }
+
+    .section-6-icons div h4 {
+        font-size: medium;
     }
 }
 
@@ -509,7 +663,10 @@ li.brand-link {
     .section-2,
     .section-3,
     .section-4,
-    .parallax__section {
+    .parallax__section,
+    .section-5,
+    .section-6,
+    .section-7 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
@@ -517,9 +674,11 @@ li.brand-link {
 
     .section-3-content {
         grid-column: 2;
+        width: 100%;
     }
 
-    .section-3-img {
+    .section-3-img,
+    .section-5-img {
         grid-column: 1;
         grid-row: 1;
     }
