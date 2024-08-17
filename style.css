@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -326,44 +330,56 @@ li.brand-link {
 }
 
 .parallax__section-text .btn,
-.section-7-text .btn {
+.section-7-text .btn,
+.section-7-text-2 .btn {
     margin-left: 25px;
     border: 1px solid #fff !important;
 }
 
+.section-7-text-2 .btn {
+    margin: 0;
+}
+
 .parallax__section-text .btn:hover,
-.section-7-text .btn:hover {
+.section-7-text .btn:hover,
+.section-7-text-2 .btn:hover {
     background-color: #fff;
     border: 1px solid #000 !important;
 }
 
 .parallax__section-text .btn:hover>a,
-.section-7-text .btn:hover>a {
+.section-7-text .btn:hover>a,
+.section-7-text-2 .btn:hover>a {
     color: #000;
 }
 
 .parallax__section-text .btn a,
-.section-7-text .btn a {
+.section-7-text .btn a,
+.section-7-text-2 .btn a {
     color: #fff;
 }
 
 .parallax__section-text .btn-arrow,
-.section-7-text .btn-arrow {
+.section-7-text .btn-arrow,
+.section-7-text-2 .btn-arrow {
     border-left: 1px solid #fff;
 }
 
 .parallax__section-text .btn:hover>.btn-arrow,
-.section-7-text .btn:hover>.btn-arrow {
+.section-7-text .btn:hover>.btn-arrow,
+.section-7-text-2 .btn:hover>.btn-arrow {
     border-left: 1px solid #000;
 }
 
 .parallax__section-text .btn i,
-.section-7-text .btn i {
+.section-7-text .btn i,
+.section-7-text-2 .btn i {
     color: #fff !important;
 }
 
 .parallax__section-text .btn:hover>.btn-arrow i,
-.section-7-text .btn:hover>.btn-arrow i {
+.section-7-text .btn:hover>.btn-arrow i,
+.section-7-text-2 .btn:hover>.btn-arrow i {
     color: #000 !important;
 }
 
@@ -432,6 +448,26 @@ li.brand-link {
     font-size: 13px;
 }
 
+.section-7-content-2 {
+    margin: 30px;
+    padding: 50px 30px;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.section-7-text-2 h4 {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.section-7 {
+    padding-bottom: 20px;
+}
+
+
+
+
+
 
 
 
@@ -495,8 +531,20 @@ li.brand-link {
 
     .section-1-text,
     .section-6-text,
-    .section-7-text {
+    .section-7-text,
+    .section-7-text-2 {
         margin: 0;
+    }
+
+    .section-7-content-2 {
+        display: grid;
+        place-items: center;
+        padding: 35px !important;
+    }
+
+    .section-7-text-2 h4 {
+        font-size: 1.3rem;
+        margin-bottom: 35px;
     }
 
     .section-1-content,
@@ -507,6 +555,10 @@ li.brand-link {
 
     .section-7-content {
         padding: 7rem;
+    }
+
+    .section-7-content-2 {
+        padding: 2rem;
     }
 
     .section-1 h4,
@@ -651,6 +703,20 @@ li.brand-link {
 
     .section-6-icons div h4 {
         font-size: medium;
+    }
+
+    .section-7-content {
+        border-bottom: none;
+    }
+
+    .section-7-content-2 {
+        width: 400px;
+        height: 500px;
+        margin-inline: auto;
+    }
+
+    .section-7 {
+        padding: 50px 0;
     }
 }
 
