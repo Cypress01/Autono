@@ -55,7 +55,8 @@ li.brand-link {
     margin-right: auto;
 }
 
-.brand-link a {
+.brand-link a,
+h1.footer-logo {
     font-weight: 700;
     font-size: 1.3rem;
     letter-spacing: .5rem;
@@ -270,7 +271,6 @@ li.brand-link {
     margin: 10px 12px;
     display: block;
 }
-
 .btn-arrow {
     border-left: 1px solid;
     height: 100%;
@@ -464,6 +464,93 @@ li.brand-link {
     padding-bottom: 20px;
 }
 
+footer {
+    padding: 50px 27px;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #BB5A1B;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-nav {
+    grid-column: span 1;
+}
+
+.footer-about {
+    grid-column: span 2;
+}
+
+.footer-form {
+    grid-column: span 3;
+}
+
+.footer-content p {
+    margin-block: 25px;
+}
+.footer-content h4 {
+    font-weight: 400;
+}
+
+.footer-form__input {
+    max-width: 500px;
+    margin-top: 12px;
+    position: relative;
+    display: flex;
+}
+
+.footer-form__input input[type="email"] {
+    border: 1px solid #000;
+    padding-inline: 12px;
+    border-radius: .5rem;
+    height: 35px;
+    width: 68%;
+}
+
+.footer-form__input button {
+    outline: none;
+    width: 150px;
+    border: 1px solid #000;
+    padding-inline: 12px;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: #000;
+    font-size: 1rem;
+    position: relative;
+    right: 18px;
+    height: 35px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.socials i {
+    margin-inline: 10px;
+}
+
+
+
+
+
+
 
 
 
@@ -650,7 +737,6 @@ li.brand-link {
         background-color: #0000002f;
         backdrop-filter: blur(4px);
     }
-
     .parallax__section-content {
         width: 550px;
         padding: 3.5rem 2rem;
@@ -718,6 +804,10 @@ li.brand-link {
     .section-7 {
         padding: 50px 0;
     }
+
+    footer {
+        padding: 6rem 10rem 3rem;
+    }
 }
 
 
@@ -747,6 +837,37 @@ li.brand-link {
     .section-5-img {
         grid-column: 1;
         grid-row: 1;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4rem;
+    }
+
+    .footer-nav {
+        grid-column: span 1;
+    }
+
+    .footer-about {
+        grid-column: span 2;
+    }
+
+    .footer-form {
+        grid-column: span 2;
+    }
+
+    .footer-content p {
+        font-size: 1.1rem;
+        margin-block: 50px;
+    }
+
+    .footer-content h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer-form__input input[type="email"],
+    .footer-form__input button {
+        height: 42px;
     }
 }
 
