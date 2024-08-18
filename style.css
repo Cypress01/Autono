@@ -543,7 +543,11 @@ footer a:hover {
 }
 
 .socials i {
-    margin-inline: 10px;
+    margin-inline: 8px;
+}
+
+.copyright p {
+    font-size: 14px;
 }
 
 
