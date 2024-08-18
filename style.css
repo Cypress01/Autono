@@ -537,6 +537,8 @@ footer a:hover {
 
 .footer-bottom {
     display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     padding-top: 50px;
 }
 
