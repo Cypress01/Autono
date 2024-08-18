@@ -537,18 +537,11 @@ footer a:hover {
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
     padding-top: 50px;
 }
 
 .socials i {
-    margin-inline: 8px;
-}
-
-.socials {
-    display: flex;
-    align-items: flex-end;
+    margin-inline: 7px;
 }
 
 .copyright p {
