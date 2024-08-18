@@ -465,7 +465,7 @@ h1.footer-logo {
 }
 
 footer {
-    padding: 50px 27px;
+    padding: 50px 20px;
 }
 
 .footer-logo {
@@ -544,6 +544,11 @@ footer a:hover {
 
 .socials i {
     margin-inline: 8px;
+}
+
+.socials {
+    display: flex;
+    align-items: flex-end;
 }
 
 .copyright p {
