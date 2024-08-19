@@ -271,6 +271,7 @@ h1.footer-logo {
     margin: 10px 12px;
     display: block;
 }
+
 .btn-arrow {
     border-left: 1px solid;
     height: 100%;
@@ -465,7 +466,7 @@ h1.footer-logo {
 }
 
 footer {
-    padding: 50px 25px 22px;
+    padding: 50px 27px 25px;
 }
 
 .footer-logo {
@@ -502,6 +503,7 @@ footer a:hover {
 .footer-content p {
     margin-block: 25px;
 }
+
 .footer-content h4 {
     font-weight: 400;
 }
@@ -537,36 +539,19 @@ footer a:hover {
 
 .footer-bottom {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
     padding-top: 50px;
-}
-
-.socials i {
-    margin-inline: 7px;
 }
 
 .copyright p {
     font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.socials i {
+    margin-inline: 8px;
+}
 
 
 @media (min-width: 720px) {
@@ -741,6 +726,7 @@ footer a:hover {
         background-color: #0000002f;
         backdrop-filter: blur(4px);
     }
+
     .parallax__section-content {
         width: 550px;
         padding: 3.5rem 2rem;
@@ -814,9 +800,6 @@ footer a:hover {
     }
 }
 
-
-
-
 @media (min-width: 1200px) {
 
     .section-1,
@@ -874,34 +857,6 @@ footer a:hover {
         height: 42px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 720px) {
     header {
