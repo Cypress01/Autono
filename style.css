@@ -9,6 +9,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     transition: all .2s;
+    scroll-margin-top: 4rem;
 }
 
 body {
@@ -73,6 +74,11 @@ h1.footer-logo {
     border: 1px solid;
     cursor: pointer;
     font-weight: normal;
+}
+
+.nav-btn-link {
+    color: #fff;
+    text-decoration: none;
 }
 
 .nav-btn:hover {
@@ -554,7 +560,7 @@ footer a:hover {
 }
 
 
-@media (min-width: 720px) {
+@media screen and (min-width: 720px) {
     header {
         position: fixed;
         width: 100%;
@@ -800,7 +806,7 @@ footer a:hover {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
     .section-1,
     .section-2,
@@ -845,7 +851,7 @@ footer a:hover {
 
     .footer-content p {
         font-size: 1.1rem;
-        margin-block: 50px;
+        margin-block: 50px; 
     }
 
     .footer-content h4 {
@@ -858,7 +864,7 @@ footer a:hover {
     }
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
     header {
         padding: 7px 18px;
     }
